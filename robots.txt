@@ -1,4 +1,5 @@
 User-agent: *
 Allow: /
 Disallow: /c/
+Disallow: /r/
 Sitemap: https://frameandscroll.com/sitemap.xml
