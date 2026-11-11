@@ -20,7 +20,7 @@
 *{box-sizing:border-box}html{-webkit-text-size-adjust:100%}
 body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.6 var(--sans);overflow-x:hidden}
 a{color:inherit}
-header{position:fixed;inset:0 0 auto;z-index:10;display:flex;justify-content:space-between;align-items:center;padding:16px 22px;background:linear-gradient(rgba(11,15,18,.85),rgba(11,15,18,0))}
+header{position:fixed;inset:0 0 auto;z-index:10;display:flex;gap:10px;justify-content:space-between;align-items:center;padding:16px 22px;background:linear-gradient(rgba(11,15,18,.85),rgba(11,15,18,0))}
 .logo{font-family:var(--serif);font-size:21px;text-decoration:none;white-space:nowrap}.logo b{color:var(--gold);font-weight:400}
 .btn{display:inline-flex;align-items:center;min-height:48px;padding:0 22px;border-radius:999px;text-decoration:none;font-weight:600;font-size:15px;white-space:nowrap;transition:transform .2s}
 .btn:hover{transform:translateY(-2px)}.btn-gold{background:var(--gold);color:#1a1408}.btn-ghost{border:1px solid var(--line)}
@@ -47,14 +47,16 @@ section{padding:96px 22px;max-width:1160px;margin:0 auto}
 .who{display:flex;flex-wrap:wrap;gap:10px;margin-top:28px}.who span{border:1px solid var(--line);border-radius:999px;padding:8px 16px;color:#d9dcdc;font-size:14px}
 .cta{text-align:center}.cta .lead{margin:18px auto 30px}.cta .row{justify-content:center}
 footer{border-top:1px solid var(--line);padding:30px 22px;text-align:center;color:var(--muted);font-size:13px}
-@media(max-width:480px){.hide-s{display:none}}
+.nav{display:flex;align-items:center;gap:18px}.navlink{font-size:15px;font-weight:500;white-space:nowrap;text-decoration:none;min-height:48px;display:inline-flex;align-items:center}.navlink:hover{color:var(--gold)}
+@media(max-width:480px){.hide-s{display:none}header{padding:12px 16px}.logo{font-size:19px}.nav{gap:14px}.nav .btn{padding:0 16px;font-size:14px}}
+@media(max-width:360px){.logo{font-size:17px}.nav{gap:10px}.nav .btn{padding:0 12px;font-size:13px}}
 @media(prefers-reduced-motion:reduce){.hero img{animation:none}.btn,.demo{transition:none}}
 </style>
 </head>
 <body>
 <header>
   <a class="logo" href="/">Frame <b>&amp;</b> Scroll</a>
-  <a class="btn btn-gold" href="#concept">Free concept</a>
+  <nav class="nav"><a class="navlink" href="/reel/"><span class="hide-s">Listing&nbsp;</span>Reels</a><a class="btn btn-gold" href="#concept">Free concept</a></nav>
 </header>
 
 <main>
